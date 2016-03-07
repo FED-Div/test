@@ -69,6 +69,13 @@ header{
 
 
 
+/*banner*/
+
+.banner-framework{
+	/*-webkit-flex-wrap:nowrap;*/
+	/*display: -webkit-flex;*/
+	width: 100%;
+}
 .banner-bg{
 	width: 100%;
 
@@ -80,16 +87,12 @@ header{
 
 .textcontent{
 	color: white;
-	/*width: 500px;*/
-	display: inline-block;
-	width: 36%;
+	width: 350px;
 	position: absolute;
 	right: 16%;
-	top: 525px;
-	/*top:30%;*/
 	padding: 10px;
+	margin-top: -119px;
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.70), rgba(255,255,255, 0));
-
 }
 
 .textcontent h1{
@@ -98,15 +101,41 @@ header{
 	float: right;
 	padding-bottom: 12px;
 }
-.textcontent p{
+
+/*.textcontent p{
 	font-size: 12px;
 	text-indent:2em;
 	float: left;
 	padding-bottom: 30px;
 	line-height:150%;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3;
+	word-break:break-all;
+}
+*/
+.textcontent .text_box{
+	font-size: 12px;
+	text-indent:2em;
+	float: left;
+	padding-top: 10px;
+	line-height:150%;
+
+
+	display:-webkit-box !important;
+	overflow:hidden;
+
+	text-overflow: ellopsis;
+	word-break:break-all;
+
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3;
+
+
+	
 }
 
 /*three cards */
+
 .cards{
 	width: 70%;/*980/1366*/
 	margin-left: auto;
@@ -138,12 +167,21 @@ header{
 
 .card_content{
 	font-size: 12px;
-	text-indent: 2em;
+	text-indent: 2em;/*首行缩进*/
 	line-height: 170%;
 	margin-top: 15px;/*文字距离图片下方间距为15px*/
 	margin-left: 30px;/*距离白色底左右两侧的内边距为30px*/
 	margin-right: 30px;
 	margin-bottom: 15px;/*距离白色底块下方的内边距为25px。*/
+/*
+	display:-webkit-box !important;
+	overflow:hidden;
+
+	text-overflow: ellopsis;
+	word-break:break-all;
+
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3;*/
 }
 
 
