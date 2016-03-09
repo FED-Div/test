@@ -7,26 +7,219 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+ul{font-size: 0}
+ul li{font-size: 1rem;list-style: none;}
+a{color: #ccc;text-decoration: none;}
+a:hover{text-decoration: none;}
 /* Reset End */
 
 /* Global */
+body{
+	font-family: Helvetica, Tahoma, Arial, simSun, "宋体", sans-serif;
+	font-size: 14px;
+}
 .container{
 	width: 980px;
+	height: auto;
 	margin: auto;
+	position: relative;
 }
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
 
 /* Header Begin */
 .header{
 	width: 100%;
+	min-width: 1200px;
 	height: 80px;
-	background-color: #333333;
+	background-color: #411D4A;
+	position: relative;
 }
+	.header .brand {
+		float: left;
+		height: 80px;
+		position: relative;
+	}
+		.header .brand span{
+			font-size: 32px;
+			color: #fff;
+			position: absolute;
+			bottom: 5px;	
+		}
+	.header ul{
+		float: right;
+		height: 80px;
+} 
+	.header ul li {
+		height: 100%;
+		width: 2em;
+		margin: auto 14px auto 14px;
+		position: relative;
+		float: left;
+	}
+		.header ul li > a{
+			position: absolute;
+			bottom: 5px;
+		}
+	.header .gh-logo{
+		position: absolute;
+		right: 10px;
+		bottom: 0;
+	}
 /* Header End */
 
 /* Banner Begin */
 .banner{
 	width: 100%;
+	min-width: 1200;
+	background-color: #ccc;
 }
+	.banner .container .message{
+		padding: 10px 30px;
+		position: absolute;
+		bottom: 10px;
+		right: 0;
+		width: 350px;
+		// background-color: #fff;
+		background: -webkit-liner-gradient(top, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0) 100%);
+		background: -moz-liner-gradient(top, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0) 100%);
+		background: -ms-liner-gradient(top, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0) 100%);
+		background: -o-liner-gradient(top, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0) 100%);
+		background: liner-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0) 100%);
+	}
+		.banner .message h2{
+			font-size: 14px;
+			text-align: right;
+			margin-bottom: 12px;
+		}
+		.banner .message p{
+			font-size: 12px;
+			line-height: 1.5em;
+		}
 	.banner img{
 		width: 100%;
+		min-width: 1200px;
 	}
+/* End Banner */
+
+/* Begin Content */
+.content{
+	padding-top: 10px;
+	padding-bottom: 100px;
+	background-color: #ccc;
+}
+.content .container{
+	overflow: hidden;
+}
+.content .item{
+	width: 320px;
+	padding: 10px;
+	margin-right: 10px;
+	background-color: #fff;
+	float: left;
+	padding-bottom: 999px;
+	margin-bottom: -995px;
+}
+.content .item:last-child{
+	margin-right: 0;
+}
+	.content .item p{
+		font-size: 12px;
+		line-height: 1.7em;
+		padding: 0 20px 25px;
+	}
+	.content .item img{
+		width: 300px;
+		height: 180px;
+		margin-bottom: 15px;
+	}
+/* End Content */
+
+
+/* Begin about */
+.about{
+	background-color: #fff;
+	color: #000;
+}
+	.about .container{
+		padding-top: 160px;
+	}
+	.about img{
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		top: -50px;
+		margin-left: -80px;
+	}
+	.about h3{
+		font-size: 20px;
+		font-family: "Century Gothic", sans-serif;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.about p{
+		width: 600px;
+		margin: auto;
+		font-size: 14px;
+		text-indent: 2em;
+		line-height: 1.6em;
+		margin-bottom: 200px;
+	}
+/* End about*/
+
+/* Begin footer*/
+.footer{
+	background-color: #000;
+}
+	.footer .nav{
+		width: 100%;
+		border-bottom: 1px solid #333;
+	}
+	.footer ul {
+		height: 35px;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		left: 50%;
+		margin-left: -89px;
+	}
+	.footer ul li{
+		line-height: 35px;
+		float: left;
+		font-size: 14px;
+		margin-right: 28px
+	}
+	.footer dl{
+		float: left;
+		text-align: center;
+		width: 20%;
+		padding-bottom: 2em;
+	}
+		.footer dl dt{
+			font-size: 16px;
+			color: #ccc;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+			.footer dl dd{
+				line-height: 1.5em;
+			}
+			.footer dl dd a:hover{text-decoration: underline;}
+	.footer .copyright h3{
+		font-size: 14px;
+		color: #ccc;
+		text-align: center;		
+		margin-bottom: 50px;
+	}
+	.footer .copyright img{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		margin-left: -15px;
+	}
+
+/* End footer */
