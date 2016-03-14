@@ -1,0 +1,30 @@
+{
+  "name": "test",
+  "version": "0.0.5",
+  "description": "test for ife_div",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FED-Div/test.git"
+  },
+  "keywords": [
+    "test",
+    "div_ife"
+  ],
+  "author": "wanglinzhizhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FED-Div/test/issues"
+  },
+  "homepage": "https://github.com/FED-Div/test#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-uglify": "^1.0.0"
+  }
+}
